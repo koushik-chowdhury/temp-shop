@@ -182,29 +182,6 @@ nav ul {
   grid-row: span 2;
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: 180px;
-  }
-
-  .gallery-grid .big,
-  .gallery-grid .wide,
-  .gallery-grid .tall {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-}
-
-@media (max-width: 500px) {
-  .gallery-grid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 200px;
-  }
-}
-
 .service {
   display: flex;
   align-items: center;
