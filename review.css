@@ -1,0 +1,133 @@
+#review {
+  padding: 60px 20px;
+
+  text-align: center;
+}
+
+#review h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.review {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.review-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.review-items {
+  min-width: 100%;
+  padding: 25px 35px;
+
+  border-radius: 12px;
+  box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.review-items p:first-child {
+  font-size: 1.1rem;
+  font-style: italic;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.review-items h3 {
+  margin: 8px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+/* Dots */
+.review-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 8px;
+}
+
+.review-dot {
+  width: 10px;
+  height: 10px;
+  background: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-dot.active {
+  background: #333;
+  transform: scale(1.2);
+}
+
+/* FAQ */
+#faq {
+  padding: 60px 20px;
+  background: #fde047; /* full section background */
+  color: #000; /* black text */
+}
+
+#faq h1 {
+  text-align: center;
+  font-size: 2.4rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: #fef9c3; /* lighter shade for contrast */
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: #000;
+}
+
+.faq-item.active {
+  background: #fde047; /* match section color when opened */
+}
+
+.faq-question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+  color: #000;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg); /* + becomes × */
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #000;
+  transition: max-height 0.4s ease;
+  margin-top: 10px;
+}
